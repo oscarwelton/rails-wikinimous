@@ -1,0 +1,19 @@
+<div class="article-single">
+  <h1><%= @article.title %></h1>
+  <h2><%= @article.content %></h2>
+  <p><%= @date %></p>
+    <br>
+
+</div>
+
+<div class="options">
+  <div class="go-back">
+    <%= link_to "GO BACK", articles_path %>
+  </div>
+  <div class="edit">
+    <%= link_to "EDIT", edit_article_path(@article) %>
+  </div>
+  <div class="delete">
+    <%= link_to "DELETE",article_path(@article),data: {turbo_method: :delete} %>
+  </div>
+</div>

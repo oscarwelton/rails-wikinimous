@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsWikinimous</title>
+    <title>Wikinimous</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="nav">
+        <a href="/articles"><h1 id="title">Wikinimous</h1></a>
+        <div class="button">
+          <a id="new" href="/articles/new/">New Article</a>
+        </div>
+      </div>
+
+      <%= yield %>
+    </div>
   </body>
 </html>

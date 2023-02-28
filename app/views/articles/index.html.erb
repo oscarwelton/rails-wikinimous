@@ -1,0 +1,8 @@
+<% @articles.each do |article| %>
+    <%= link_to(article) do %>
+      <div class="article">
+        <h3><%= article.title %></h3>
+        <p><b>Last words: </b> "<%= article.content %>"</p>
+      </div>
+  <% end %>
+<% end %>
